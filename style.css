@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+/* ============================there is a container style======================= */
+
+.Calculator {
+  animation-name: myAnimation;
+  animation-duration: 1.5s;
+  background: linear-gradient(lime, skyblue);
+  position: relative;
+  border: 1.5px solid red;
+  width: 278px;
+  height: auto;
+  padding: 15px 20px;
+  border-radius: 20px;
+  top: 100px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3), 0 16px 32px 0 rgba(0, 0, 0, 0.21);
+}
+/* ============================there is Animation style======================= */
+
+@keyframes myAnimation {
+  to {
+    background: linear-gradient(red, blue);
+    border: 0;
+  }
+}
+
+/* ============================there is a name style======================= */
+
+.Calculator form > .name {
+  animation-name: myCalculater_Name;
+  animation-duration: 3s;
+  animation-delay: 0.25s;
+  font-size: smaller;
+  color: black;
+  font-style: italic;
+  float: right;
+  top: 0;
+  margin-top: 5px;
+}
+@keyframes myCalculater_Name {
+  from {
+    transform: skew(-90deg);
+    color: yellow;
+  }
+}
+/* ============================there is a content style======================= */
+
+.content {
+  animation-name: myCalculater;
+  animation-duration: 2s;
+  animation-delay: 0.25s;
+  width: 228px;
+  background: transparent;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 15px;
+  box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.3), 0 16px 32px 0 rgba(0, 0, 0, 0.21);
+}
+@keyframes myCalculater {
+  to {
+    transform: rotate(360deg);
+    background: transparent;
+  }
+}
+
+.row {
+  margin: 5px;
+  margin-right: 16px;
+  padding: 5px 0px;
+  border-bottom: 0.5px dotted white;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3), 0 16px 32px 0 rgba(0, 0, 0, 0.21);
+}
+.row:hover {
+  border-bottom: 0.5px solid yellowgreen;
+  transition-duration: 0.75s;
+  transition-delay: 0.5s;
+}
+/* ============================there is a display style======================= */
+.display {
+  animation-name: myDisplay;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  width: 230px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  outline: none;
+  font-size: 25px;
+  background: wheat;
+  text-align: right;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3), 0 16px 32px 0 rgba(0, 0, 0, 0.21);
+}
+@keyframes myDisplay {
+  to {
+    transform: scale(0.5);
+  }
+}
+/* ============================there is a btn_number style======================= */
+
+.btn_number {
+  background: salmon;
+  padding: 10px 17px;
+  outline: none;
+  border: 0;
+  border-radius: 7px;
+  margin-right: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn_number:hover {
+  background: #173459;
+
+  color: #fff;
+}
+.btn_number_2 {
+  background: salmon;
+  padding: 10px 17px;
+  outline: none;
+  border: 0;
+  border-radius: 7px;
+  margin-left: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn_number_2:hover {
+  background: #173459;
+
+  color: #fff;
+}
+/* ============================there is a btn_extra style======================= */
+
+.btn_extra {
+  background: rgb(218, 86, 86);
+  padding: 10px 17px;
+  color: #fff;
+  outline: none;
+  border: 0;
+  border-radius: 7px;
+  margin-left: 3px;
+  font-size: bold;
+  cursor: pointer;
+}
+.btn_extra:hover {
+  background: #173459;
+}
+.btn_extra_persent {
+  background: rgb(218, 86, 86);
+  padding: 10px 17px;
+  color: #fff;
+  outline: none;
+  border: 0;
+  border-radius: 7px;
+  margin-left: 3px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn_extra_persent:hover {
+  background: #173459;
+}
+.btn_extra_1 {
+  background: lime;
+  padding: 10px 27px;
+  outline: none;
+  border: 0;
+  border-radius: 7px;
+  margin-left: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn_extra_1:hover {
+  background: red;
+  color: white;
+}

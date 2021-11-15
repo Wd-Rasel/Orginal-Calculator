@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="calculator-solid.svg" />
+    <title>Amaizing Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="Calculator">
+      <form action="post" name="form">
+        <p class="name"><u> Calculator & RaSeL </u></p>
+
+        <!-- =================this is a display=======================-->
+
+        <div class="row_display">
+          <input
+            type="text"
+            class="display"
+            name="mydisplay"
+            placeholder="0"
+            value=""
+          />
+        </div>
+
+        <div class="content">
+          <!-- =================this is a btn number=======================-->
+
+          <div class="row">
+            <input
+              type="button"
+              value="7"
+              name="btn"
+              class="btn_number"
+              onclick=" Calculator(this.value)"
+            />
+            <input
+              type="button"
+              value="8"
+              name="btn"
+              class="btn_number"
+              onclick=" Calculator(this.value)"
+            />
+            <input
+              type="button"
+              value="9"
+              name="btn"
+              class="btn_number"
+              onclick=" Calculator(this.value)"
+            />
+            <input
+              type="button"
+              value="/"
+              name="btn"
+              class="btn_extra"
+              onclick=" Calculator(this.value)"
+            />
+          </div>
+
+          <div class="row">
+            <input
+              type="button"
+              value="4"
+              name="btn"
+              class="btn_number"
+              onclick=" Calculator(this.value)"
+            />
+            <input
+              type="button"
+              value="5"
+              name="btn"
+              class="btn_number"
+              onclick=" Calculator(this.value)"
+            />
+            <input
+              type="button"
+              value="6"
+              name="btn"
+              class="btn_number"
+              onclick=" Calculator(this.value)"
+            />
+            <input
+              type="button"
+              value="*"
+              name="btn"
+              class="btn_extra"
+              onclick=" Calculator(this.value)"
+            />
+          </div>
+
+          <div class="row">
+            <input
+              type="button"
+              value="1"
+              name="btn"
+              class="btn_number"
+              onclick=" Calculator(this.value)"
+            />
+            <input
+              type="button"
+              value="2"
+              name="btn"
+              class="btn_number"
+              onclick=" Calculator(this.value)"
+            />
+            <input
+              type="button"
+              value="3"
+              name="btn"
+              class="btn_number"
+              onclick=" Calculator(this.value)"
+            />
+            <input
+              type="button"
+              value="-"
+              name="btn"
+              class="btn_extra"
+              onclick=" Calculator(this.value)"
+            />
+          </div>
+
+          <div class="row">
+            <input
+              type="button"
+              value="0"
+              name="btn"
+              class="btn_number"
+              onclick=" Calculator(this.value)"
+            />
+            <input
+              type="button"
+              value="."
+              name="btn"
+              class="btn_extra"
+              onclick=" Calculator(this.value)"
+            />
+            <input
+              type="button"
+              value="%"
+              name="btn"
+              class="btn_extra_persent"
+              onclick=" Calculator(this.value)"
+            />
+            <input
+              type="button"
+              value="+"
+              class="btn_extra"
+              onclick=" Calculator(this.value)"
+            />
+          </div>
+
+          <div class="row_2">
+            <input
+              type="button"
+              value="00"
+              name="btn"
+              class="btn_number_2"
+              onclick=" Calculator(this.value)"
+            />
+            <input
+              type="button"
+              value="C"
+              name="btn"
+              class="btn_extra_1 active"
+              onclick=" mydisplay.value = null"
+            />
+            <input
+              type="button"
+              value="="
+              name="btn"
+              class="btn_extra_1 active_2"
+              onclick=" mydisplay.value = eval(mydisplay.value)"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- =================codeing end is here =======================-->
+
+    <!--================= javascript start is here =======================-->
+
+    <script>
+      function Calculator(x) {
+        form.mydisplay.value = form.mydisplay.value + x;
+      }
+    </script>
+  </body>
+</html>
